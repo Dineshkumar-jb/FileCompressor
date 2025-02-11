@@ -1,19 +1,16 @@
-Here's a well-structured and detailed `README.md` file for your GitHub project on a file compressor and decompressor website:  
 
----
 
 # 🗜️ File Compressor & Decompressor Website  
 
 ### 🚀 Project by:  
 👤 **Dinesh Kumar JB**  
-👤 **Rohit**  
+👤 **Rohit**  -  https://github.com/rohit87887
 
 ---
 
 ## 📌 Overview  
 This web-based application allows users to **compress** and **decompress** files efficiently. Built with modern web technologies, the platform ensures a smooth user experience while handling various file formats.  
 
-### 🔥 Key Features:  
 ✅ **Fast & Secure Compression** – Reduces file size without compromising quality.  
 ✅ **Multiple Formats Supported** – Works with ZIP, RAR, TAR, GZ, and more.  
 ✅ **Decompression Capability** – Extracts files instantly.  
@@ -117,7 +114,7 @@ This project is licensed under the **MIT License**.
 
 ## 📞 Contact  
 📧 **dineshkumar.j.b2005@gmail.com**  
-🌐 **https://github.com/Dineshkumar-jb**  
+🌐 **https://github.com/Dineshkumar-jb**      ,     https://github.com/rohit87887
 👥 **Dinesh Kumar JB & Rohit**  
 
 Happy Compressing! 🎉🚀🔧
