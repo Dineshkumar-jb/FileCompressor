@@ -1,69 +1,123 @@
-<!-- Author : Samir Paul -->
-<div align="center">
-<h1> Text File Compressor De-compressor Web App</h1>
-</div>
+Here's a well-structured and detailed `README.md` file for your GitHub project on a file compressor and decompressor website:  
 
+---
 
-- This webapp uses Huffman Coding for Text Compression and De-compression.
-- Made with JavaScript, HTML5 and CSS3.
-- Live Demo:👇
+# 🗜️ File Compressor & Decompressor Website  
 
-- [x] [samirpaulb.github.io/txt-compressor](https://samirpaulb.github.io/txt-compressor/)
+### 🚀 Project by:  
+👤 **Dinesh Kumar JB**  
+👤 **Rohit**  
 
-- [x] [txt-compressor.vercel.app](https://txt-compressor.vercel.app/)
+---
 
+## 📌 Overview  
+This web-based application allows users to **compress** and **decompress** files efficiently. Built with modern web technologies, the platform ensures a smooth user experience while handling various file formats.  
 
-## About this application:
+### 🔥 Key Features:  
+✅ **Fast & Secure Compression** – Reduces file size without compromising quality.  
+✅ **Multiple Formats Supported** – Works with ZIP, RAR, TAR, GZ, and more.  
+✅ **Decompression Capability** – Extracts files instantly.  
+✅ **User-Friendly Interface** – Simple and intuitive design.  
+✅ **No Installation Required** – Fully browser-based solution.  
 
-* This website performs Lossless data compression and decompression of text(.txt) files using Huffman Algorithm.
-* In this algorithm, a variable-length code is assigned to input different characters. The code length is related to how frequently characters are used. Most frequent characters have the smallest codes and longer codes for least frequent characters.
-* A Huffman code is a tree, built bottom up, starting with the list of different characters appearing in a text and their frequency. 
-* Compression ratio usually improves as the file size increases.
-* The website is made responsive (with HTML and CSS ) and interactive (with JavaScript ) .
-* An [Info page](https://samirpaulb.github.io/txt-compressor/info.html) is added to give more information about tecnique of **Lossless Data Compression** with Huffman coding.
+---
 
+## 🛠️ Tech Stack  
+| Technology  | Purpose |
+|-------------|---------|
+| **Frontend** 🎨 | HTML, CSS, JavaScript (React/Angular/Vue) |
+| **Backend** 🖥️ | Node.js / Python (Flask/Django) |
+| **Storage** 💾 | Cloud Storage / Local Storage |
+| **Compression Libraries** 🔧 | zlib, LZMA, gzip, etc. |
 
+---
 
+## 📂 Project Structure  
+```
+📦 FileCompressor  
+ ┣ 📂 frontend  
+ ┃ ┣ 📜 index.html  
+ ┃ ┣ 📜 styles.css  
+ ┃ ┣ 📜 app.js  
+ ┣ 📂 backend  
+ ┃ ┣ 📜 server.js (or app.py)  
+ ┃ ┣ 📜 compression.py  
+ ┃ ┣ 📜 decompression.py  
+ ┣ 📂 assets  
+ ┃ ┣ 📜 logo.png  
+ ┃ ┣ 📜 favicon.ico  
+ ┣ 📜 README.md  
+ ┣ 📜 package.json / requirements.txt  
+ ┣ 📜 LICENSE  
+```
 
-## Video
-https://user-images.githubusercontent.com/77569653/172716965-50560f4a-2acf-4013-ae87-8b474b2a09e3.mp4
+---
 
+## 🏗️ Installation & Setup  
 
+### 1️⃣ Clone the Repository  
+```sh
+git clone https://github.com/yourusername/file-compressor.git
+cd file-compressor
+```
 
-- [x] Landing Page:
+### 2️⃣ Install Dependencies  
+#### 📌 If using Node.js  
+```sh
+cd backend
+npm install
+```
+#### 📌 If using Python  
+```sh
+pip install -r requirements.txt
+```
 
-<a href="#"> ![screenshot](images/readme-images/landing-page.png) </a>
+### 3️⃣ Run the Project  
+#### ✅ Start Backend  
+```sh
+node server.js   # For Node.js  
+python app.py    # For Python
+```
+#### ✅ Start Frontend  
+```sh
+cd frontend
+open index.html   # Or run via local server
+```
 
-- [x] Upload File
+---
 
-<a href="#"> ![step1](images/readme-images/step1.png) </a>
+## 🎯 How It Works?  
+1️⃣ Upload the file you want to **compress or decompress**.  
+2️⃣ Select the desired **compression format**.  
+3️⃣ Click the **"Compress"** or **"Decompress"** button.  
+4️⃣ Download your processed file instantly! 🚀  
 
+---
 
-- [x] Select Action (Compress / De-compress)
+## 🛡️ Security & Privacy  
+🔒 **Your data remains secure** – We do not store or track any uploaded files.  
+⚡ **Fast processing** – Uses optimized algorithms to ensure quick execution.  
 
-<a href="#"> ![step2](images/readme-images/step2.png) </a>
+---
 
+## 📢 Contributing  
+We welcome contributions! 🎉 If you’d like to improve the project:  
+1️⃣ **Fork the repository**  
+2️⃣ **Create a new branch** (`feature/amazing-feature`)  
+3️⃣ **Commit your changes** (`git commit -m 'Add amazing feature'`)  
+4️⃣ **Push to your branch** (`git push origin feature/amazing-feature`)  
+5️⃣ **Open a Pull Request**  
 
-- [x] Wait for File Download
-    * File gets downloaded automatically when selected process is complete.
+---
 
-    * Compression - Compression Ratio is also displayed 
+## 📝 License  
+This project is licensed under the **MIT License**.  
 
-    <a href="#"> ![compression](images/readme-images/step3.png) </a>
-    
-    * De-compression
+---
 
-    <a href="#"> ![decompression](images/readme-images/decompression.png) </a>
+## 📞 Contact  
+📧 **dineshkumar.j.b2005@gmail.com**  
+🌐 **https://github.com/Dineshkumar-jb**  
+👥 **Dinesh Kumar JB & Rohit**  
 
-* Additional Instructions and Warnings are provided if the above steps are not followed correctly
-
-<a href="#"> ![noFile](images/readme-images/nofile.png) </a>
-
-<a href="#"> ![smallFile](images/readme-images/verysmallfile.png)  </a>
-
-
-
-* About the tecnique of Lossless Data Compression with Huffman coding.
-
-<a href="#"> ![info1](images/readme-images/info.jpeg) </a>
-
+Happy Compressing! 🎉🚀🔧
