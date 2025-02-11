@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Compressor & Decompressor</title>
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src='script.js' type="text/javascript"></script>
+    <style>
+        body {
+            background: url('https://subobject.nero.com/suite/web/neroai/assets/image-compressor/image-compressor-nic-demo-1.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            color: black;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .container {
+            max-width: 900px;
+        }
+        .btn {
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>File Compressor & Decompressor</h1>
+        <p>Efficiently compress and decompress your text files with ease</p>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/txt-logo.png" width="30" height="30" class="d-inline-block align-top" alt="txt-logo" loading="lazy">
+                File Compressor & Decompressor
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html" target="_blank" data-bs-toggle="tooltip" title="Learn about compression">💡 Learn More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <div class="card text-center shadow-sm p-4">
+            <div class="card-header bg-warning"><b>STEP 1:</b> Upload Your File (.txt Only)</div>
+            <div class="card-body">
+                <img height="50" width="50" src="assets/upload.gif" alt="Upload" loading="lazy">
+                <form method="post" enctype="multipart/form-data" id="fileform" class="mt-3">
+                    <input type="file" id="uploadfile" class="form-control mb-3" accept=".txt">
+                    <button class="btn btn-primary" type="button" id="submitbtn">Upload ⤒</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="card text-center shadow-sm p-4 mt-4">
+            <div class="card-header bg-warning"><b>STEP 2:</b> Choose an Action</div>
+            <div class="card-body">
+                <img height="60" width="60" src="assets/action.gif" alt="Action" loading="lazy">
+                <div class="mt-3">
+                    <button type="button" id="encode" class="btn btn-success" data-bs-toggle="tooltip" title="Compress your file">Compress ⭳</button>
+                    <span class="mx-2">or</span>
+                    <button type="button" id="decode" class="btn btn-danger" data-bs-toggle="tooltip" title="Decompress your file">Decompress ⭳</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card text-center shadow-sm p-4 mt-4">
+            <div class="card-header bg-warning">Sit Back & Relax</div>
+            <div class="card-body">
+                <img height="60" width="60" src="assets/emoji.gif" alt="Relax" loading="lazy">
+                <p class="mt-3">Click below to start over!</p>
+                <button class="btn btn-secondary" type="button" onclick="location.reload()">Reload</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center mt-5 py-3 bg-dark text-light">
+        <p>&copy; 2025 File Compressor | Designed by Samir Paul</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+</body>
+</html>
