@@ -4,7 +4,7 @@
 
 ### 🚀 Project by:  
 👤 **Dinesh Kumar JB**  
-👤 **Rohit**  -  https://github.com/rohit87887
+
 
 ---
 
@@ -114,7 +114,7 @@ This project is licensed under the **MIT License**.
 
 ## 📞 Contact  
 📧 **dineshkumar.j.b2005@gmail.com**  
-🌐 **https://github.com/Dineshkumar-jb**      ,     https://github.com/rohit87887
-👥 **Dinesh Kumar JB & Rohit**  
+🌐 **https://github.com/Dineshkumar-jb**    
+👥 **Dinesh Kumar JB**
 
 Happy Compressing! 🎉🚀🔧
